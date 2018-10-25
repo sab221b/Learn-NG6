@@ -1,0 +1,63 @@
+<div>
+    <h2><u>Interpolation:</u> </h2>
+    <h3> Welcome {{ name }}! </h3>
+    <h3> 2 + 2 = {{ 2+2 }} </h3>
+    <h3> {{ "Welcome " + name }}! </h3>
+    <h3> '{{ name }}' has {{ name.length }} characters </h3>
+    <h3> '{{ name }}' in uppercase: {{ name.toUpperCase()}} </h3>
+    <h3> {{ greetUser()}}! </h3>
+    <h3> site URL = {{ siteURL }} </h3>
+</div>
+<hr>
+<div>
+    <h2><u>Property Binding:</u> </h2>
+    <p>Check your console - </p>
+    <p> Given name : <input type="text" [value]= givenName ></p>
+    <button (click)= "showConsole(givenName)">Submit</button>
+    <p>Note: Property binding binds data from class to the template</p>
+    <br><br>
+</div>
+<hr>
+<div>
+    <h2><u>Class Binding:</u> </h2>
+    <h3> Normal CSS Class: <span class="text-success">Some text here</span> </h3>
+    <h3> Using Class Binding: <span [class]="danger">Some text here</span> </h3>
+    <h3> Another method of class binding: <span [class.text-warning]="isError">Some text here</span> </h3>
+    <h3> Another method of class binding using ngClass: <span [ngClass]="specialClasses">Some text here</span> </h3>
+</div>
+<hr>
+<div>
+    <h2><u>Style Binding:</u> </h2>
+    <h3> Normal Style Binding: <span [style.color]="'blue'">Some text here</span> </h3>
+    <h3> Another way of Style Binding: <span [style.color]="redColor">Some text here</span> </h3>
+    <h3> Style Binding using conditional operator: <span [style.color]="isError ? 'green':'brown'">Some text here</span>
+    </h3>
+    <h3> Style Binding using ngStyle: <span [ngStyle]="sampleStyle">Some text here</span> </h3>
+</div>
+<hr>
+<div>
+    <h2><u>Event Binding:</u> </h2>
+    <h3>this is a click event: </h3>
+    <button (click)="onButton1()"> Button-1 </button>
+    <p>{{ greeting1 }}</p>
+    <button (click)="onButton2($event)"> Button-2 </button>
+    <p>{{ greeting2 }}</p>
+    <button (click)="greeting3='Hello Sabine, you have pressed button 3 and this is inline event binding'"> Button-3
+    </button>
+    <p>{{ greeting3 }}</p>
+</div>
+<hr>
+<div>
+    <h2><u>Template Reference Variable:</u> </h2>
+    <h3>check you console! </h3>
+    <p> Enter your name: <input #myName type="text" value=""> </p>
+    <button (click)="consoleName(myName.value)">click here</button>
+</div>
+<hr>
+<div>
+    <h2><u>2-Way Data Binding:</u> </h2>
+    <p> Given name : <input type="text" value="Sabine" [(ngModel)]="givenName"></p>
+    <p>{{'Welcome ' + givenName + '!'}}</p>
+    <br><br>
+</div>
+<hr>

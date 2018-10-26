@@ -6,3 +6,8 @@
   <hr style ="border-width: 5px">
 </div>
 <app-binding></app-binding>
+<app-struct-directive></app-struct-directive>
+<app-compnt-interaction (childEvent)="message=$event" [parentData]="name"></app-compnt-interaction>
+<h3><b>{{ message }}</b></h3>
+<app-pipes></app-pipes>
+<app-learn-services></app-learn-services>

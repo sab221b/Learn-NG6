@@ -56,5 +56,6 @@ export class BindingComponent implements OnInit {
 
   consoleName(value) {
     console.log(value);
+    document.getElementById('name').innerHTML = value;
   }
 }

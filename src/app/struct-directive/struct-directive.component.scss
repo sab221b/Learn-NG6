@@ -1,0 +1,54 @@
+hr {
+    border-width: 2px;
+  }
+
+h2 {
+    margin-left: 4%;
+  }
+  
+  h3 {
+    margin-left: 5%;
+  }
+  
+  p {
+    margin-left: 5%;
+    font-size: 20px;
+  }
+
+  .text-green {
+    color: green;
+  }
+  .text-red {
+    color: red;
+  }
+  .text-blue {
+    color: blue;
+  }
+  .text-special {
+    font-style: italic;
+  }
+  
+  input[type=text] {
+    margin-left: 1%;
+    width: 25%;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  button {
+    margin-left:5%;
+    width: 12%;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  input[type=radio] {
+    margin-left: 2%;
+    width: 1.2em;
+    height: 1.2em;
+    
+  }

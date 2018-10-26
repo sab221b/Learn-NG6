@@ -1,0 +1,25 @@
+<hr>
+<div>
+    <h2><u>Pipes:</u></h2>
+  </div>
+  <hr>
+  <h3>{{ " Hello " + name }}</h3>
+  <h3>{{ " in lowercase: Hello " + name | lowercase }}</h3>
+  <h3>{{ " in uppercase: Hello " + name | uppercase }}</h3>
+  <h3>{{ " in titlecase: " + message | titlecase }}</h3>
+  <h3>{{ "Sab is sliced from Sabine" }}</h3>
+  <h3>{{ name | slice: 0:3 }}</h3>
+  <h3>{{ "displaying as json" }}</h3>
+  <h3>{{ myName | json }}</h3>
+  <h3>{{ "Number Pipes" }}</h3>
+  <h3>{{ "3.1423" | number:'1.2-3' }}</h3> 
+  <h3>{{ "3.1423" | number:'3.5-8' }}</h3>
+  <h3>{{ "3.1423" | number:'1.0-0' }}</h3>
+  <h3>{{ 0.58 | percent }}</h3>
+  <h3>{{ "221" | currency }}</h3>
+  <h3>{{ "221" | currency:'GBP' }}</h3>
+  <h3>{{ "221" | currency:'INR' }}</h3>
+  <h3>{{ date }}</h3>
+  <h3>{{ date | date:'shortDate'}}</h3>
+  <h3>{{ date | date:'shortTime'}}</h3>
+  <hr><br>

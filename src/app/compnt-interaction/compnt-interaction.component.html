@@ -1,0 +1,10 @@
+<div>
+  <h2><u>Component Interaction:</u></h2>
+</div>
+<hr style="border-width: 5px">
+<div>
+  <h3>1. Data flows from parent to child</h3>
+  <h3> {{ "   hello " + parentData + ", this is from parent to child" }} </h3>
+  <h3>2. Data flows from child to parent</h3>
+  <button (click)="fireEvent()">Send Event</button>
+</div>

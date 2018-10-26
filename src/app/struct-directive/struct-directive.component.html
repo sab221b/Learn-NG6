@@ -1,0 +1,61 @@
+<div>
+  <h2><u>Structural Directives:</u></h2>
+</div>
+<hr style="border-width: 5px">
+<div>
+  <h2><u>ngIf</u> </h2>
+  <h3 *ngIf="true"> this i visible as ngIf is true</h3>
+  <h3 *ngIf="false"> ngIf is false</h3>
+  <h3 *ngIf="isError"> This is visible as property isError evaluates to true</h3>
+</div>
+<hr>
+<div>
+  <h2><u>ng If-Else block method 1</u></h2>
+  <h3 *ngIf="isError; else elseBlock1">if block is rendered</h3>
+  <ng-template #elseBlock1>
+    <h3>else block is rendered</h3>
+  </ng-template>
+</div>
+<hr>
+<div>
+  <h2><u>ng If-Else block method 2</u></h2>
+  <div *ngIf="isValue; then ifBlock; else elseBlock"></div>
+  <ng-template #ifBlock>
+    <h3>if block is rendered</h3>
+  </ng-template>
+  <ng-template #elseBlock>
+    <h3>else block is rendered</h3>
+  </ng-template>
+</div>
+<hr>
+<div>
+  <h2><u>ngSwitch</u></h2>
+  <h3>Select any color :</h3>
+  <h3>
+    <input type="radio" value="red" [(ngModel)]="color"> Red
+    <input type="radio" value="blue" [(ngModel)]="color"> Blue
+    <input type="radio" value="green" [(ngModel)]="color"> Green <br>
+  </h3>
+  <div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">
+      <p [style.color]="'red'">Red is selected</p>
+    </div>
+    <div *ngSwitchCase="'blue'">
+      <p [style.color]="'blue'">Blue is selected</p>
+    </div>
+    <div *ngSwitchCase="'green'">
+      <p [style.color]="'green'">Green is selected</p>
+    </div>
+    <div *ngSwitchDefault>
+      <p>select an option</p>
+    </div>
+  </div>
+</div>
+<hr>
+<div>
+  <h2><u>ngFor</u></h2>
+  <div *ngFor="let text of colors; let i = index;">
+    <h3>{{ i+1 }}. {{ text }} </h3>
+  </div>
+  </div>
+  <hr>

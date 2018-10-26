@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'NG6';
+  public name = 'Sabine'; // sending for component interaction
+  public message = '';
 }

@@ -1,4 +1,8 @@
 <div>
+    <h2><u>Angular Bindings:</u> </h2>
+</div>
+<hr style ="border-width: 5px">
+<div>
     <h2><u>Interpolation:</u> </h2>
     <h3> Welcome {{ name }}! </h3>
     <h3> 2 + 2 = {{ 2+2 }} </h3>
@@ -12,8 +16,8 @@
 <div>
     <h2><u>Property Binding:</u> </h2>
     <p>Check your console - </p>
-    <p> Given name : <input type="text" [value]= givenName ></p>
-    <button (click)= "showConsole(givenName)">Submit</button>
+    <p> Given name : <input type="text" [value]=givenName></p>
+    <button (click)="showConsole(givenName)">Submit</button>
     <p>Note: Property binding binds data from class to the template</p>
     <br><br>
 </div>
@@ -52,6 +56,7 @@
     <h3>check you console! </h3>
     <p> Enter your name: <input #myName type="text" value=""> </p>
     <button (click)="consoleName(myName.value)">click here</button>
+    <p>check your name here: <span id="name"></span></p>
 </div>
 <hr>
 <div>
@@ -60,4 +65,4 @@
     <p>{{'Welcome ' + givenName + '!'}}</p>
     <br><br>
 </div>
-<hr>
+<hr style ="border-width: 5px">

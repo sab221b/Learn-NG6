@@ -1,10 +1,13 @@
 <div>
     <h2><u>Services and Dependency Injection:</u></h2>
   <hr>
-  <h2><b>Students List</b> </h2>
-  <h3>
-    <ul *ngFor="let student of students">
-       <li>{{"ID: " + student.id }}-----{{"Name: " + student.name }}-----{{"RollNo: " + student.rollNo }}-----{{"Department: " + student.Dept }}</li>
-    </ul>
+  <h2><b>Students List - data from student service</b> </h2>
+  <h3 *ngFor="let student of students">
+       {{i}}. {{"ID: " + student.id }}-----{{"Name: " + student.name }}-----{{"RollNo: " + student.rollNo }}-----{{"Department: " + student.Dept }}
+  </h3>
+  <br>
+  <h2><b>Employees List - data from external source (employees.json)</b> </h2>
+  <h3 *ngFor="let employee of employees">
+       {{i}}. {{"ID: " + employee.id }}-----{{"Name: " + employee.name }}-----{{"Employee No: " + employee.empNo }}-----{{"Deptartment: " + employee.dept }}
   </h3>
   <hr>

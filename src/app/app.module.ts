@@ -9,6 +9,7 @@ import { CompntInteractionComponent } from './compnt-interaction/compnt-interact
 import { PipesComponent } from './pipes/pipes.component';
 import { LearnServicesComponent } from './learn-services/learn-services.component';
 import { StudentsService } from './students.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { StudentsService } from './students.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [StudentsService],
   bootstrap: [AppComponent]

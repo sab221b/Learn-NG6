@@ -1,13 +1,36 @@
+
+<body>
+  <div class="container">
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
+  <h1><br>
     Learn {{ title }}!
   </h1>
   <hr style ="border-width: 5px">
 </div>
+<nav>
+  <h2>
+  <ul>
+      <li><a routerLink="/binding">Binding </a></li>
+      <li><a routerLink="/struct-directive">Structural Directives </a></li>
+      <li><a routerLink="/compnt-interaction">Component Interaction </a></li>
+      <li><a routerLink="/pipes">Pipes </a></li>
+      <li><a routerLink="/learn-services">Services and Dependency Injection</a></li>
+      <li><a routerLink="/learn-routing">Routing </a></li>
+  </ul>
+  </h2>
+</nav>
+<hr>
+<router-outlet></router-outlet>
+<!-- routed view goes here 
 <app-binding></app-binding>
 <app-struct-directive></app-struct-directive>
 <app-compnt-interaction (childEvent)="message=$event" [parentData]="name"></app-compnt-interaction>
 <h3><b>{{ message }}</b></h3>
 <app-pipes></app-pipes>
 <app-learn-services></app-learn-services>
+<app-learn-routing></app-learn-routing>
+<router-outlet></router-outlet>
+-->
+</div>
+</body>
